@@ -1,13 +1,22 @@
 /* Reset */
 
-body, h1, h2, h3, p, ul {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
   padding: 0px;
   margin: 0px;
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   color: #252525;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* Menu */
@@ -22,8 +31,9 @@ body {
   margin: 0 auto;
 }
 
-.menu-container::after, .menu-container::before {
-  content: '';
+.menu-container::after,
+.menu-container::before {
+  content: "";
   display: table;
   clear: both;
 }
@@ -54,7 +64,7 @@ body {
 /* Intro */
 
 .intro {
-  background: url('../img/bg-intro.jpg') no-repeat center center;
+  background: url("../img/bg-intro.jpg") no-repeat center center;
   background-size: cover;
   padding: 150px 0;
   text-align: center;
@@ -67,7 +77,7 @@ body {
 }
 
 .intro h1::after {
-  content: '';
+  content: "";
   display: block;
   width: 20px;
   height: 4px;
@@ -90,8 +100,9 @@ body {
   margin: 0 auto;
 }
 
-.sobre-container::after, .sobre-container::before {
-  content: '';
+.sobre-container::after,
+.sobre-container::before {
+  content: "";
   display: table;
   clear: both;
 }
@@ -150,8 +161,9 @@ body {
   margin: 0 auto;
 }
 
-.produtos-container::after, .produtos-container::before {
-  content: '';
+.produtos-container::after,
+.produtos-container::before {
+  content: "";
   display: table;
   clear: both;
 }
@@ -169,7 +181,7 @@ body {
 }
 
 .produtos-item h2::before {
-  content: '';
+  content: "";
   display: block;
   width: 100px;
   height: 100px;
@@ -177,7 +189,7 @@ body {
   border-radius: 50%;
   margin: 20px auto;
   border: 5px solid #e7e4d8;
-  box-shadow: 0 0 0 10px currentColor ;
+  box-shadow: 0 0 0 10px currentColor;
 }
 
 h2.produtos-paulista::before {
@@ -224,9 +236,10 @@ h2.produtos-mineiro::before {
   margin: 60px auto;
 }
 
-.locais-item::after, .locais-item::before {
+.locais-item::after,
+.locais-item::before {
   display: table;
-  content: '';
+  content: "";
   clear: both;
 }
 
@@ -241,7 +254,7 @@ h2.produtos-mineiro::before {
   width: 460px;
   display: block;
   float: left;
-  margin: 0 10px;  
+  margin: 0 10px;
 }
 
 .locais-item h2 {
@@ -263,4 +276,103 @@ h2.produtos-mineiro::before {
   border: 3px solid;
   color: #252525;
   padding: 10px 20px;
+}
+
+/* Assine */
+
+.assine {
+  background: #e7e4d8;
+  padding: 30px 0;
+}
+
+.assine-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.assine-container::after,
+.assine-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.assine-info {
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+}
+
+.assine-info h2 {
+  font-size: 2.25em;
+}
+
+.assine-info p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.assine form {
+  width: 460px;
+  margin: 10px 10px 0 10px;
+  float: left;
+}
+
+.assine form label {
+  display: none;
+}
+
+.assine input {
+  width: 320px;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
+  float: left;
+}
+
+.assine button {
+  background: #252525;
+  border: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  width: 140px;
+  padding: 13px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+  background: #d6d3c8;
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-container::after,
+.footer-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-container p {
+  float: left;
+  margin: 0 10px;
+  font-size: 1.125em;
+  line-height: 1.4em;
+}
+
+.footer img {
+  float: right;
+  margin: 0 10px;
+  display: block;
 }
