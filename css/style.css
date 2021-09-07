@@ -341,12 +341,12 @@ h2.produtos-mineiro::before {
 
 @media (min-width: 740px) and (max-width: 980px) {
   .locais {
-    max-width: 300px;
+    max-width: 720px;
   }
 
   .locais-item > div,
   .locais-item img {
-    max-width: 340px;
+    width: 340px;
   }
 }
 
